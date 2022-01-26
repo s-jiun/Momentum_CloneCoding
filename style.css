@@ -1,3 +1,53 @@
 .hidden {
   display: none;
 }
+
+input {
+  width: 65%;
+  padding: 5px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-size: cover;
+  overflow: hidden;
+  font-size: large;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+}
+
+#greeting {
+  margin-top: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-right: 40px;
+}

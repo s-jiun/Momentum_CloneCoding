@@ -12,7 +12,7 @@ function onSuccess(position){
     .then(response => response.json())
     .then(data => {
         city.innerText = data.name;
-        weather.innerText = data.weather[0].main;
+        weather.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${data.weather[0].main}`;
         temp.innerText = `${data.main.temp} ℃`;
     });
 }
